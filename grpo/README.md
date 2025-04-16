@@ -29,6 +29,8 @@ Simply run
 
     sbatch train_grpo.slurm
 
+**Note:** some wrong dependencies might get installed (mainly Pytorch), make sure this is not the case.
+
 ### Observations and issues:
 - We do not know whether Qwen model family works correctly on Lumi, due to this warning: Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
 - With the default hyperparameters the training results in **NaN** grad norm already on the first or second training step:
